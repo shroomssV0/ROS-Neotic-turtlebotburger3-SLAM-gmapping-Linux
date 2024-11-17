@@ -1,0 +1,8 @@
+prefix=/home/ros_ws/catkin_ws/install
+
+Name: yolo_example
+Description: Description of yolo_example
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

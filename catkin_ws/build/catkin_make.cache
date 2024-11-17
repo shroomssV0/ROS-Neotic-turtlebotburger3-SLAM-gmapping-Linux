@@ -1,0 +1,2 @@
+own_package:pxl_drones_week:sternformost:summerforall:turtlebot3_autorace_camera:turtlebot3_gazebo:yolo_example
+-DCATKIN_DEVEL_PREFIX=/home/ros_ws/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros_ws/catkin_ws/install -G Unix Makefiles

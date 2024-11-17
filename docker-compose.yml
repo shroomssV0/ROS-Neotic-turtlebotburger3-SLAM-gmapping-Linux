@@ -1,0 +1,17 @@
+services:
+  ros-noetic:
+    build:
+      context: .
+    container_name: ros-noetic-container
+    image: ros-noetic-image
+    volumes:
+      - ./catkin_ws:/home/ros_ws/catkin_ws
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw  # Allow GUI rendering via X11
+    environment:
+      - DISPLAY=${DISPLAY}  # Pass host DISPLAY to container
+      - QT_X11_NO_MITSHM=1  # Avoid shared memory conflicts
+      - TURTLEBOT3_MODEL=burger
+    devices:
+      - /dev/dri:/dev/dri  # Provide GPU access for Intel/AMD
+    stdin_open: true
+    tty: true

@@ -1,0 +1,8 @@
+prefix=/home/ros_ws/catkin_ws/install
+
+Name: own_package
+Description: Description of own_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
